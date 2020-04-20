@@ -1,0 +1,23 @@
+pipeline { 
+    agent any 
+    options {
+        skipStagesAfterUnstable()
+    }
+    stages {
+        stage('Build') { 
+            steps { 
+                powershell 'new-item C:\Scripts\gitrep\filepo.txt -type file' 
+            }
+        }
+        stage('Test'){
+            steps {
+            powershell 'write-host "Hola'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                powershell 'get-process'
+            }
+        }
+    }
+}
