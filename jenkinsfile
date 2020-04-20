@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                powershell 'new-item -path C:\Scripts\gitrep\filepo.txt -type file' 
+                powershell 'new-item -path C:\\Scripts\\Example.html -type file'
             }
         }
         stage('Test'){
             steps {
-            powershell 'write-host "Hola'
+            powershell 'write-host "Hola" '
             }
         }
         stage('Deploy') {
