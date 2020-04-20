@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                powershell 'new-item C:\Scripts\gitrep\filepo.txt -type file' 
+                powershell 'new-item -path C:\Scripts\gitrep\filepo.txt -type file' 
             }
         }
         stage('Test'){
