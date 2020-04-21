@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                powershell 'new-item -path C:\\Scripts\\Example1.html -type file'
+                powershell 'new-item -path C:\\Scripts\\Example2.html -type file'
             }
         }
         stage('Test'){
